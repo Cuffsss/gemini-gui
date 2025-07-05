@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+const { spawn } = require('child_process');
+const path = require('path');
+
+// Get the directory where this script is located
+const scriptDir = __dirname;
+
+// Spawn electron with the app directory
+const electron = spawn('npx', ['electron', scriptDir], {
+  stdio: 'inherit',
+  cwd: scriptDir
+});
+
+electron.on('close', (code) => {
+  process.exit(code);
+});

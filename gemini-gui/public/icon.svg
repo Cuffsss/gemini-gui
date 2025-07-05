@@ -1,0 +1,43 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="geminiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285f4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#34a853;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbc05;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="#1e1e1e"/>
+  
+  <!-- Gemini Symbol -->
+  <g transform="translate(256, 256)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="url(#geminiGradient)" stroke-width="16" opacity="0.8"/>
+    
+    <!-- Inner elements representing AI and IDE -->
+    <g transform="rotate(-45)">
+      <!-- Code brackets -->
+      <path d="M -80,-60 L -120,-20 L -80,20" fill="none" stroke="#4285f4" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 80,-60 L 120,-20 L 80,20" fill="none" stroke="#4285f4" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- AI neural network representation -->
+      <circle cx="-40" cy="-40" r="10" fill="#34a853"/>
+      <circle cx="40" cy="-40" r="10" fill="#34a853"/>
+      <circle cx="-40" cy="40" r="10" fill="#34a853"/>
+      <circle cx="40" cy="40" r="10" fill="#34a853"/>
+      <circle cx="0" cy="0" r="15" fill="#fbbc05"/>
+      
+      <!-- Connections -->
+      <line x1="-40" y1="-40" x2="0" y2="0" stroke="#34a853" stroke-width="3" opacity="0.6"/>
+      <line x1="40" y1="-40" x2="0" y2="0" stroke="#34a853" stroke-width="3" opacity="0.6"/>
+      <line x1="-40" y1="40" x2="0" y2="0" stroke="#34a853" stroke-width="3" opacity="0.6"/>
+      <line x1="40" y1="40" x2="0" y2="0" stroke="#34a853" stroke-width="3" opacity="0.6"/>
+    </g>
+  </g>
+  
+  <!-- Text -->
+  <text x="256" y="420" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="url(#geminiGradient)">
+    GEMINI GUI
+  </text>
+</svg>

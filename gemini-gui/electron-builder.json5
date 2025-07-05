@@ -1,0 +1,42 @@
+{
+  appId: "com.gemini.gui",
+  productName: "Gemini GUI",
+  directories: {
+    output: "release/${version}"
+  },
+  files: [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "!node_modules/**/*",
+    "node_modules/**/*.node"
+  ],
+  mac: {
+    artifactName: "${productName}-${version}-${arch}.${ext}",
+    target: ["dmg", "zip"],
+    category: "public.app-category.developer-tools"
+  },
+  win: {
+    target: [
+      {
+        target: "nsis",
+        arch: ["x64"]
+      },
+      {
+        target: "zip",
+        arch: ["x64"]
+      }
+    ],
+    artifactName: "${productName}-${version}-${arch}.${ext}"
+  },
+  linux: {
+    target: ["AppImage", "deb"],
+    artifactName: "${productName}-${version}.${ext}",
+    category: "Development"
+  },
+  nsis: {
+    oneClick: false,
+    perMachine: false,
+    allowToChangeInstallationDirectory: true,
+    deleteAppDataOnUninstall: false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "gemini-gui",
+  "version": "1.0.0",
+  "description": "AI-powered IDE with Gemini integration",
+  "main": "electron/main.js",
+  "bin": {
+    "gemini-gui": "./gemini-gui"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "keywords": ["ai", "ide", "gemini", "electron"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^34.0.0"
+  }
+}
