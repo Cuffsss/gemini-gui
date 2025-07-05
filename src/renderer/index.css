@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Selection styling */
+::selection {
+  background-color: #264f78;
+  color: #ffffff;
+}
+
+/* Code editor font */
+.cm-editor {
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+/* Terminal styling */
+.xterm {
+  padding: 10px;
+}
+
+/* Resizable panels */
+.panel-group {
+  height: 100%;
+}
+
+.resize-handle {
+  background-color: #3e3e42;
+  transition: background-color 0.2s;
+}
+
+.resize-handle:hover {
+  background-color: #007acc;
+}
+
+.resize-handle-inner {
+  width: 100%;
+  height: 100%;
+}
